@@ -1,0 +1,22 @@
+@media (min-width: 769px) {
+    .WACWidget {
+        width: calc(var(--window-width) * 0.82) !important;
+        height: fill !important;
+        z-index: 2 !important;
+        max-height: 2160px !important;
+        max-width: 3840px !important;
+    }
+    
+    .WAC__image {
+        height: calc(var(--window-height) * 0.4) !important;
+    }
+ }
+
+@media (max-width: 769px) {
+    .WACWidget {
+        width: var(--window-width) !important;
+        height: calc(var(--window-height) - (var(--window-height) / 10)) !important;
+        top: calc(var(--window-height) / 10) !important;
+        z-index: 2 !important;
+    }
+ }

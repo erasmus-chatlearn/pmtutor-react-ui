@@ -1,0 +1,37 @@
+.moreprogress {
+    display: flex;
+    height: 100%;
+}
+
+@media (min-width: 769px) {
+    .moreprogress .content {
+        position: absolute;
+        text-align: justify;
+        left: calc(((var(--window-width) - var(--window-width) / 7) / 6) * 1.5);
+        top: 10%;
+        width: 50%;
+        
+    }
+    .moreprogress .exercices {
+        position: absolute;
+        width: 75%;
+        height: 50%;
+        text-align: justify;
+        top: 200%;
+    }
+  }
+
+  @media (max-width: 769px) {
+    .moreprogress .content {
+        position: absolute;
+        text-align: justify;
+        left: 10%;
+        top: 10%;
+        right: 10%;
+    }
+    .moreprogress .exercices {
+        position: absolute;
+        text-align: justify;
+        top: 200%;
+    }
+}

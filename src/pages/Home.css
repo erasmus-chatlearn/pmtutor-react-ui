@@ -1,0 +1,32 @@
+.home {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.home .Eu-logo {
+    position: absolute;
+    height: 6.5rem;
+    width: 6.5rem;
+    top: 100%;
+}
+
+@media (min-width: 769px) {
+    .home .content {
+        left: calc(((var(--window-width) - var(--window-width) / 7) / 6) * 1.5);
+        top: 10%;
+        position: absolute;
+        padding-right: 10%;
+        text-align: start;
+    }
+  }
+
+  @media (max-width: 769px) {
+    .home .content {
+        position: absolute;
+        text-align: start;
+        padding-left: 10%;
+        top: 10%;
+        padding-right: 10%;
+    }
+}

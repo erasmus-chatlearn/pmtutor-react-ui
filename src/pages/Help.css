@@ -1,0 +1,78 @@
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 99%;
+    height: 99%;
+    border: none;
+}
+.help {
+    display: flex;
+    height: 100%;
+}
+
+.help .Eu-logo {
+    position: absolute;
+    height: 6.5rem;
+    width: 6.5rem;
+    top: 650%;
+}
+
+@media (min-width: 769px) {
+    .help .content {
+        position: absolute;
+        text-align: start;
+        left: calc(((var(--window-width) - var(--window-width) / 7) / 6) * 1.5);
+        top: 10%;
+        width: 70%;
+        padding-right: calc(var(--window-width) / 10);
+    }
+    .help .select {
+        position: absolute;
+        width: 75%;
+        height: 100%;
+        text-align: start;
+        top: 100%;
+    }
+    .help .selection {
+        position: absolute;
+        width: 75%;
+        height: 50%;
+        text-align: start;
+        top: 200%;
+    }
+  }
+
+  @media (max-width: 769px) {
+    .help .content {
+        position: absolute;
+        text-align: start;
+        left: 10%;
+        top: 10%;
+        width: 80%;
+    }
+    .help .select {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: start;
+        top: 100%;
+    }
+    .help .selection {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        text-align: start;
+        top: 200%;
+    }
+}

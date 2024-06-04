@@ -1,0 +1,12 @@
+# GPT Engineer
+workspace
+archive
+memory
+file_list.txt
+prompt
+
+.idea
+build
+node_modules
+npm-debug.log
+
